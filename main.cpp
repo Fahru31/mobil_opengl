@@ -718,7 +718,7 @@ void myMenu(int id)
 
  }
 
-/*
+
        if(id==12)
  {
  aflag=1;
@@ -727,7 +727,7 @@ void myMenu(int id)
  glDisable(GL_FOG);
  glutPostRedisplay();
  }
- */
+ 
 
  if(id==13)
  {
@@ -839,12 +839,12 @@ int main(int argc, char **argv)
  glutAddMenuEntry("Model Mobil", 1);
  glutAddMenuEntry("Mode Berjalan", 2);
  /*glutAddMenuEntry("Efek kabut",3);*/
- /*glutAddMenuEntry("Pembatas jalan",4);*/
+ glutAddMenuEntry("Pembatas jalan",4);
  /*glutAddMenuEntry("toggle light",5);*/
  glutAddSubMenu("Warna Mobil",submenu);
- /*glutAddMenuEntry("Siang Hari",12);*/
+ glutAddMenuEntry("Siang Hari",12);
  glutAddMenuEntry("Malam Hari",13);
- /*glutAttachMenu(GLUT_RIGHT_BUTTON);*/
+ glutAttachMenu(GLUT_RIGHT_BUTTON);
 
   /* Now drop into the event loop from which we never return */
 
